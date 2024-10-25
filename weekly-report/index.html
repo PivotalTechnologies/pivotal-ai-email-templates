@@ -867,11 +867,11 @@
                     <!-- chart colum -->
                     <div class="flex flex-col gap-3 flex-1">
                       <div class="h-[200px] flex flex-col justify-end">
-                        <div class="relative" style="height: 10%">
+                        <div class="relative" style="height: $MON_DAILY_MESSAGES_PERCENTAGE%">
                           <p
                             class="h5 text-center absolute -top-5 left-0 w-full"
                           >
-                            10
+                            $MON_DAILY_MESSAGES_VALUE
                           </p>
                           <div class="bg-blue-800 rounded-t-md h-full"></div>
                         </div>
@@ -881,11 +881,11 @@
                     <!-- chart colum -->
                     <div class="flex flex-col gap-3 flex-1">
                       <div class="h-[200px] flex flex-col justify-end">
-                        <div class="relative" style="height: 20%">
+                        <div class="relative" style="height: $TUE_DAILY_MESSAGES_PERCENTAGE%">
                           <p
                             class="h5 text-center absolute -top-5 left-0 w-full"
                           >
-                            20
+                            $TUE_DAILY_MESSAGES_VALUE
                           </p>
                           <div class="bg-blue-800 rounded-t-md h-full"></div>
                         </div>
@@ -895,11 +895,11 @@
                     <!-- chart colum -->
                     <div class="flex flex-col gap-3 flex-1">
                       <div class="h-[200px] flex flex-col justify-end">
-                        <div class="relative" style="height: 30%">
+                        <div class="relative" style="height: $WED_DAILY_MESSAGES_PERCENTAGE%">
                           <p
                             class="h5 text-center absolute -top-5 left-0 w-full"
                           >
-                            30
+                            $WED_DAILY_MESSAGES_VALUE
                           </p>
                           <div class="bg-blue-800 rounded-t-md h-full"></div>
                         </div>
@@ -909,11 +909,11 @@
                     <!-- chart colum -->
                     <div class="flex flex-col gap-3 flex-1">
                       <div class="h-[200px] flex flex-col justify-end">
-                        <div class="relative" style="height: 40%">
+                        <div class="relative" style="height: $THU_DAILY_MESSAGES_PERCENTAGE%">
                           <p
                             class="h5 text-center absolute -top-5 left-0 w-full"
                           >
-                            40
+                            $THU_DAILY_MESSAGES_VALUE
                           </p>
                           <div class="bg-blue-800 rounded-t-md h-full"></div>
                         </div>
@@ -923,11 +923,11 @@
                     <!-- chart colum -->
                     <div class="flex flex-col gap-3 flex-1">
                       <div class="h-[200px] flex flex-col justify-end">
-                        <div class="relative" style="height: 50%">
+                        <div class="relative" style="height: $FRI_DAILY_MESSAGES_PERCENTAGE%">
                           <p
                             class="h5 text-center absolute -top-5 left-0 w-full"
                           >
-                            50
+                            $FRI_DAILY_MESSAGES_VALUE
                           </p>
                           <div class="bg-blue-800 rounded-t-md h-full"></div>
                         </div>
@@ -937,11 +937,11 @@
                     <!-- chart colum -->
                     <div class="flex flex-col gap-3 flex-1">
                       <div class="h-[200px] flex flex-col justify-end">
-                        <div class="relative" style="height: 60%">
+                        <div class="relative" style="height: $SAT_DAILY_MESSAGES_PERCENTAGE%">
                           <p
                             class="h5 text-center absolute -top-5 left-0 w-full"
                           >
-                            60
+                            $SAT_DAILY_MESSAGES_VALUE
                           </p>
                           <div class="bg-blue-800 rounded-t-md h-full"></div>
                         </div>
@@ -951,11 +951,11 @@
                     <!-- chart colum -->
                     <div class="flex flex-col gap-3 flex-1">
                       <div class="h-[200px] flex flex-col justify-end">
-                        <div class="relative" style="height: 70%">
+                        <div class="relative" style="height: $SUN_DAILY_MESSAGES_PERCENTAGE%">
                           <p
                             class="h5 text-center absolute -top-5 left-0 w-full"
                           >
-                            70
+                            $SUN_DAILY_MESSAGES_VALUE
                           </p>
                           <div class="bg-primary rounded-t-md h-full"></div>
                         </div>
@@ -971,7 +971,7 @@
                   <p class="h-4 text-gray-400">Intentions Analysis</p>
                   <p class="h1">What customers were saying</p>
                   <p class="p text-gray-400">
-                    <span class="text-orange-400">Payment</span> inquiries
+                    <span class="text-orange-400" style="color: $INQUIRY_COLOR">$INQUIRY_VALUE</span> inquiries
                     increased by
                     <span class="text-white">$PAYMENT_INQUIRY_PERCENTS%</span>
                     this week.
@@ -979,13 +979,13 @@
                   <div class="flex gap-8">
                     <div class="flex-1">
                       <p class="p">Highest intention category was</p>
-                      <p class="p" style="color: #fb923c">
-                        $HIGHEST_INTENTION.
+                      <p class="p" style="color: $HIGHEST_INTENTION_COLOR">
+                        $HIGHEST_INTENTION_LABEL.
                       </p>
                     </div>
                     <div class="flex-1">
                       <p class="p">Lowest intention category was</p>
-                      <p class="p" style="color: #ec4899">$LOWEST_INTENTION.</p>
+                      <p class="p" style="color: $LOWEST_INTENTION_COLOR">$LOWEST_INTENTION_LABEL.</p>
                     </div>
                   </div>
                 </div>
@@ -996,55 +996,55 @@
                     <div class="flex flex-1 items-end h-[200px]">
                       <div
                         class="flex-1 rounded-t-full"
-                        style="height: 15%; background-color: #ffedd5"
-                      ></div>
+                        style="height: $CURRENT_INTENTION_1_PERCENTAGE%; background-color: $INTENTION_1_COLOR"
+                        ></div>
                       <div
                         class="flex-1 bg-gray-700 rounded-t-full"
-                        style="height: 20%"
+                        style="height: $PREV_INTENTION_1_PERCENTAGE%"
                       ></div>
                     </div>
                     <!-- duplicate chart column -->
                     <div class="flex flex-1 items-end h-[200px]">
                       <div
                         class="flex-1 rounded-t-full"
-                        style="height: 10%; background-color: #ec4899"
+                        style="height: $CURRENT_INTENTION_2_PERCENTAGE%; background-color: $INTENTION_2_COLOR"
                       ></div>
                       <div
                         class="flex-1 bg-gray-700 rounded-t-full"
-                        style="height: 15%"
+                        style="height: $PREV_INTENTION_2_PERCENTAGE%"
                       ></div>
                     </div>
                     <!-- duplicate chart column -->
                     <div class="flex flex-1 items-end h-[200px]">
                       <div
                         class="flex-1 rounded-t-full"
-                        style="height: 20%; background-color: #2563eb"
+                        style="height: $CURRENT_INTENTION_3_PERCENTAGE%; background-color: $INTENTION_3_COLOR"
                       ></div>
                       <div
                         class="flex-1 bg-gray-700 rounded-t-full"
-                        style="height: 25%"
+                        style="height: $PREV_INTENTION_3_PERCENTAGE%"
                       ></div>
                     </div>
                     <!-- duplicate chart column -->
                     <div class="flex flex-1 items-end h-[200px]">
                       <div
                         class="flex-1 rounded-t-full"
-                        style="height: 25%; background-color: #a855f7"
+                        style="height: $CURRENT_INTENTION_4_PERCENTAGE%; background-color: $INTENTION_4_COLOR"
                       ></div>
                       <div
                         class="flex-1 bg-gray-700 rounded-t-full"
-                        style="height: 30%"
+                        style="height: $PREV_INTENTION_4_PERCENTAGE%"
                       ></div>
                     </div>
                     <!-- duplicate chart column -->
                     <div class="flex flex-1 items-end h-[200px]">
                       <div
                         class="flex-1 rounded-t-full"
-                        style="height: 30%; background-color: #fb923c"
+                        style="height: $CURRENT_INTENTION_5_PERCENTAGE%; background-color: $INTENTION_5_COLOR"
                       ></div>
                       <div
                         class="flex-1 bg-gray-700 rounded-t-full"
-                        style="height: 35%"
+                        style="height: $PREV_INTENTION_5_PERCENTAGE%"
                       ></div>
                     </div>
                   </div>
@@ -1054,10 +1054,10 @@
                     <div class="flex gap-1 items-center">
                       <div
                         class="w-2 h-2 rounded-full"
-                        style="background-color: #ffedd5"
+                        style="background-color: $INTENTION_1_COLOR"
                       ></div>
                       <p class="p text-gray-400">
-                        $INTENTION_1:
+                        $INTENTION_1_LABEL:
                         <span class="text-white">$INTENTION_1_VALUE</span>
                       </p>
                     </div>
@@ -1065,10 +1065,10 @@
                     <div class="flex gap-1 items-center">
                       <div
                         class="w-2 h-2 rounded-full"
-                        style="background-color: #ec4899"
+                        style="background-color: $INTENTION_2_COLOR"
                       ></div>
                       <p class="p text-gray-400">
-                        $INTENTION_2:
+                        $INTENTION_2_LABEL:
                         <span class="text-white">$INTENTION_2_VALUE</span>
                       </p>
                     </div>
@@ -1076,10 +1076,10 @@
                     <div class="flex gap-1 items-center">
                       <div
                         class="w-2 h-2 rounded-full"
-                        style="background-color: #2563eb"
+                        style="background-color: $INTENTION_3_COLOR"
                       ></div>
                       <p class="p text-gray-400">
-                        $INTENTION_3:
+                        $INTENTION_3_LABEL:
                         <span class="text-white">$INTENTION_3_VALUE</span>
                       </p>
                     </div>
@@ -1087,10 +1087,10 @@
                     <div class="flex gap-1 items-center">
                       <div
                         class="w-2 h-2 rounded-full"
-                        style="background-color: #a855f7"
+                        style="background-color: $INTENTION_4_COLOR"
                       ></div>
                       <p class="p text-gray-400">
-                        $INTENTION_4:
+                        $INTENTION_4_LABEL:
                         <span class="text-white">$INTENTION_4_VALUE</span>
                       </p>
                     </div>
@@ -1098,10 +1098,10 @@
                     <div class="flex gap-1 items-center">
                       <div
                         class="w-2 h-2 rounded-full"
-                        style="background-color: #fb923c"
+                        style="background-color: $INTENTION_5_COLOR"
                       ></div>
                       <p class="p text-gray-400">
-                        $INTENTION_5:
+                        $INTENTION_5_LABEL:
                         <span class="text-white">$INTENTION_5_VALUE</span>
                       </p>
                     </div>
@@ -1116,7 +1116,7 @@
                   <p class="h-4 text-gray-400">Urgency Analysis</p>
                   <p class="h1">
                     Customer inquiries reflected a
-                    <span class="text-orange-400">low</span> level of urgency
+                    <span class="text-orange-400" style="color: $URGENCY_LEVEL_COLOR">$URGENCY_LEVEL_LABEL</span> level of urgency
                   </p>
                   <div class="flex gap-4">
                     <div class="flex-1 text-gray-400">
@@ -1152,19 +1152,19 @@
                     <div class="min-w-[60px]">
                       <p class="text-gray-400">Low</p>
                       <p class="h4 text-blue-400">
-                        $LOW_URGENCY_VALUE<span class="p text-gray-500"
-                          >/$LOW_URGENCY_VALUE_OLD</span
+                        $LOW_URGENCY_VALUE_CURRENT<span class="p text-gray-500"
+                          >/$LOW_URGENCY_VALUE_PREV</span
                         >
                       </p>
                     </div>
                     <div class="flex flex-col flex-1 py-2 gap-2.5">
                       <div
                         class="h-[22px] rounded-r-full bg-blue-400"
-                        style="width: 80%"
+                        style="width: $LOW_URGENCY_PERCENTAGE_CURRENT%"
                       ></div>
                       <div
                         class="h-[22px] rounded-r-full bg-gray-700"
-                        style="width: 85%"
+                        style="width: $LOW_URGENCY_PERCENTAGE_PREV%"
                       ></div>
                     </div>
                   </div>
@@ -1174,19 +1174,19 @@
                     <div class="min-w-[60px]">
                       <p class="text-gray-400">Medium</p>
                       <p class="h4 text-yellow-300">
-                        $MEDIUM_URGENCY_VALUE<span class="p text-gray-500"
-                          >/$MEDIUM_URGENCY_VALUE_OLD</span
+                        $MEDIUM_URGENCY_VALUE_CURRENT<span class="p text-gray-500"
+                          >/$MEDIUM_URGENCY_VALUE_PREV</span
                         >
                       </p>
                     </div>
                     <div class="flex flex-col flex-1 py-2 gap-2.5">
                       <div
                         class="h-[22px] rounded-r-full bg-yellow-300"
-                        style="width: 85%"
+                        style="width: $MEDIUM_URGENCY_PERCENTAGE_CURRENT%"
                       ></div>
                       <div
                         class="h-[22px] rounded-r-full bg-gray-700"
-                        style="width: 90%"
+                        style="width: $MEDIUM_URGENCY_PERCENTAGE_PREV%"
                       ></div>
                     </div>
                   </div>
@@ -1194,19 +1194,19 @@
                     <div class="min-w-[60px]">
                       <p class="text-gray-400">High</p>
                       <p class="h4 text-red-500">
-                        $HIGH_URGENCY_VALUE<span class="p text-gray-500"
-                          >/$HIGH_URGENCY_VALUE_OLD</span
+                        $HIGH_URGENCY_VALUE_CURRENT<span class="p text-gray-500"
+                          >/$HIGH_URGENCY_VALUE_PREV</span
                         >
                       </p>
                     </div>
                     <div class="flex flex-col flex-1 py-2 gap-2.5">
                       <div
                         class="h-[22px] rounded-r-full bg-red-500"
-                        style="width: 90%"
+                        style="width: $HIGH_URGENCY_PERCENTAGE_CURRENT%"
                       ></div>
                       <div
                         class="h-[22px] rounded-r-full bg-gray-700"
-                        style="width: 95%"
+                        style="width: $HIGH_URGENCY_PERCENTAGE_PREV%"
                       ></div>
                     </div>
                   </div>
@@ -1218,7 +1218,7 @@
                   <p class="h-4 text-gray-400">Net Sentiment Score</p>
                   <p class="h1">
                     The score is up
-                    <span class="" style="color: #31c48d">$SCORE_CHANGE</span>
+                    <span class="" style="color: #31c48d">$SCORE_CHANGE_VALUE</span>
                     points this week
                   </p>
                   <p class="p text-gray-400">
@@ -1234,7 +1234,7 @@
                     <style>
                       /* unique key $ACCOUNTS.$ID*/
                       .circular-progress-1 {
-                        --progress: 37.5;
+                        --progress: calc($NET_SENTIMENT_PERCENTAGE * 0.75);
                         --size: 222px;
                         --half-size: calc(var(--size) / 2);
                         --stroke-width: 20px;
@@ -1347,9 +1347,9 @@
             Return to your dashboard to take action on customer feedback
             insights.
           </p>
-          <button class="px-7 py-2.5 bg-primary rounded-lg self-start">
+          <a class="px-7 py-2.5 bg-primary rounded-lg self-start" href="$GO_TO_DASHBOARD_URL" target="_blank">
             Go to Dashboard
-          </button>
+          </a>
         </div>
         <div class="flex items-center justify-center pr-16">
           <svg
@@ -1772,11 +1772,12 @@
         </p>
         <p class="p">
           To unsubscribe from these reports,
-          <a href="" class="text-white cursor-pointer underline">click here</a>.
+          <a href="$UNSUBSCRIBE_EMAIL_URL" target="_blank" class="text-white cursor-pointer underline">click here</a>.
         </p>
       </div>
       <svg
-        class="absolute bottom-0 left-0 w-full z-10"
+        class="absolute bottom-0 left-0 w-full"
+        style="z-index: -1;"
         width="1440"
         height="242"
         viewBox="0 0 1440 242"
@@ -1816,5 +1817,5 @@
       </svg>
     </footer>
   </body>
-  <script src="./index.js"></script>
+  <!-- <script src="./index.js"></script> -->
 </html>
