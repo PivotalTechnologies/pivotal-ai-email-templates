@@ -10,6 +10,7 @@ const variables = {
   $USER_NAME: "John Doe",
   $ACCOUNT_IMG_URL: "https://picsum.photos/200/300",
   $ACCOUNT_NAME: "Account 1",
+  $ACCOUNT_ID : 1,
   // Message Distribution
   $MESSAGE_COUNT: 10,
   $PERCENT_COMPARED_TO_LAST_WEEK: 10,
